@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veniyara | Premium Indo-Western Atelier</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fbf9f4",
+                "inverse-surface": "#0e0e0c",
+                "on-secondary-fixed-variant": "#6b5841",
+                "primary-dim": "#535252",
+                "on-secondary-fixed": "#4d3c27",
+                "surface-variant": "#e2e3d9",
+                "on-primary-container": "#525151",
+                "on-error-container": "#752121",
+                "error-container": "#fe8983",
+                "background": "#fbf9f4",
+                "surface-container-highest": "#e2e3d9",
+                "tertiary-container": "#fde7d3",
+                "secondary-container": "#f8dec1",
+                "on-tertiary-fixed-variant": "#6d5e4f",
+                "on-tertiary-container": "#635445",
+                "surface": "#fbf9f4",
+                "on-background": "#31332c",
+                "tertiary-fixed-dim": "#eed9c6",
+                "tertiary-dim": "#5f5142",
+                "surface-tint": "#5f5e5e",
+                "inverse-primary": "#ffffff",
+                "surface-dim": "#d9dbcf",
+                "primary-container": "#e5e2e1",
+                "surface-container": "#efeee6",
+                "surface-container-low": "#f5f4ed",
+                "primary-fixed": "#e5e2e1",
+                "secondary": "#6f5c45",
+                "outline-variant": "#b1b3a9",
+                "on-primary-fixed-variant": "#5c5b5b",
+                "on-surface-variant": "#5e6058",
+                "outline": "#797c73",
+                "tertiary": "#6c5c4d",
+                "on-primary-fixed": "#403f3f",
+                "on-tertiary-fixed": "#504234",
+                "on-surface": "#31332c",
+                "on-error": "#fff7f6",
+                "on-tertiary": "#fff7f3",
+                "secondary-dim": "#62503a",
+                "surface-container-high": "#e8e9e0",
+                "primary-fixed-dim": "#d6d4d3",
+                "on-primary": "#faf7f6",
+                "inverse-on-surface": "#9e9d99",
+                "error-dim": "#4e0309",
+                "tertiary-fixed": "#fde7d3",
+                "secondary-fixed": "#f8dec1",
+                "on-secondary": "#fff7f3",
+                "secondary-fixed-dim": "#ead0b3",
+                "primary": "#5f5e5e",
+                "on-secondary-container": "#614f38",
+                "error": "#9f403d"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-asymmetry {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-neutral-200/20 dark:border-neutral-800/20">
+<div class="flex justify-between items-center px-12 py-4 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center" href="#"><img alt="Veniyara Icon" class="h-10 w-auto dark:invert mr-3" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara" class="h-8 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-900 dark:text-white border-b border-neutral-400 pb-1" href="#">New Arrivals</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Collections</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Atelier</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Sustainable</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Journal</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200">search</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 relative">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-[10px] text-white w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="stunning model in a silk ivory indo-western drape dress standing in a minimalist sun-drenched architectural space with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLi4WF-JuGr3OcXNPnRmawTNYxNzTmbtwJ5j2EG4fgRmJgzkN4EFn6Dwdtp4dTa50pCf8eIhyYQn9Ewk9Vtd-2KHX48U2NAUJAHTDGaDPqbb8G-UvKcAXWt23Oq8Rsu18E2hb39Af63eweEQ3kgdx2oueNGituOhcCDAiCO2VegK4ZFWAXXwcg9ewluXEkU4-P4kMuZbW_3ekigKnQBs33LOj_RWXeJJbwW4htwOW3bC8CvI7wgQdJGk1LBf84MNP9IQTwytGHkNcZ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 md:px-24 max-w-4xl">
+<p class="font-label text-sm tracking-[0.3em] uppercase text-on-surface/80 mb-6">The Autumn Collective</p>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-tight mb-8 tracking-tight">
+                    Traditional Soul,<br/><span class="italic font-light">Modern Silhouette</span>
+</h1>
+<div class="flex gap-6">
+<button class="px-10 py-4 bg-primary text-on-primary font-label text-xs tracking-widest uppercase hover:bg-primary-dim transition-colors">
+                        Explore Collection
+                    </button>
+<button class="px-10 py-4 border-b border-outline-variant text-on-surface font-label text-xs tracking-widest uppercase hover:opacity-60 transition-opacity">
+                        View Lookbook
+                    </button>
+</div>
+</div>
+<!-- Atelier Carousel Indicator -->
+<div class="absolute bottom-12 left-12 right-12 h-[2px] bg-outline-variant/20">
+<div class="h-full bg-secondary w-1/4 transition-all duration-1000"></div>
+</div>
+</section>
+<!-- Featured Collections (Asymmetric Bento) -->
+<section class="px-12 py-32 max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-md">
+<h2 class="font-headline text-4xl text-on-surface mb-4">Curated Edits</h2>
+<p class="text-on-surface-variant font-body">Meticulously crafted pieces that bridge the gap between heritage handlooms and contemporary aesthetics.</p>
+</div>
+<a class="text-xs uppercase tracking-widest border-b border-outline-variant pb-1" href="#">See All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Featured Card -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="overflow-hidden bg-surface-container-low aspect-[4/5] mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="detail shot of intricate gold zari embroidery on a charcoal grey silk fabric with soft editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF8s31wMD6W64C7vY33Dolv8W22WnG8JlOsn6eBUXjz3mFzgdO1ptTR-vWKdDQnHSJifI3uE7U_zJKp9r33MmulNSv79sDdt7SWpu2n_AzL8pvGhWOcXuR1IUQ0-BHl3MyLtgKjVsPQqWuJtV9Tu9b2R4b8kqRU3FH4NRWcnznvNgye6sXMAkiWT65bFav4IuDnv3R5e-DMxhBsjzO0XtDvmLvJcM7nzvyg1UhRgqXR-2jm4l1a00tTTcLM_rjynFiMWzZIiWV6JUJ"/>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2">Editor's Choice</p>
+<h3 class="font-headline text-2xl mb-1">Festive Edit 2024</h3>
+<p class="text-on-surface-variant text-sm">Gilded threads and fluid forms for the modern celebration.</p>
+</div>
+<!-- Column of Smaller Cards -->
+<div class="md:col-span-5 flex flex-col gap-12">
+<div class="group cursor-pointer">
+<div class="overflow-hidden bg-surface-container-low aspect-video mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="woman in a minimalist pastel linen co-ord set walking through an art gallery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpi0WjHLkyrujDosfHexm8ZrFWlCPzVobmQwNw5rMGvMZgmZmDPWPTgEceqSYLFUqPVk9LFi142E5kcMuQiRUEkehvJ7DmWOdeg7fVeV6AqDMvulC9me4CIDJevm7x2Apo747rdzdr-zGt8CLgjIXKFAduUADy6NR50VgYYkF95dknMPmyoWdrI_SjHfT1f5C7ZRWN9v38UH7IA2Rqq-IU2QdyEGHHjDDFSvOZLkwIs0xAgC97yE-Ubc49XR4QWiql_uWFSMv8_6yT"/>
+</div>
+<h3 class="font-headline text-xl mb-1">Everyday Elegance</h3>
+<p class="text-on-surface-variant text-sm">Breathable luxury for your daily rituals.</p>
+</div>
+<div class="group cursor-pointer translate-x-8">
+<div class="overflow-hidden bg-surface-container-low aspect-[4/3] mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="collection of contemporary silver jewelry inspired by ancient Indian motifs on a stone pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCT0Wdy_agKYD-aUia2uAKTZjwzeLf9VkTRMvR9SavVUzIXvETzHaDe_btbrYYqdzjaN9u3FxrvmkN3OGquSJWwE692PeTgZ3IYStOx7qD-cA9NDSkqeyCvHlecfHuepeZbCXlZgfO0Fu7r1B9W7uEGfzMOv4e19XYvb9g4LPejSXcbwqgnG4yF__jH1LirPcI4dCU9zFXl2kElp8Cy3bJtfRbKCyUrBJ2wGc-oghjcq9oFm2saCwjjwzGRdH3EHcns1kVIQKqAG9h"/>
+</div>
+<h3 class="font-headline text-xl mb-1">New Arrivals</h3>
+<p class="text-on-surface-variant text-sm">Fresh silhouettes straight from our Jaipur atelier.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Grid -->
+<section class="bg-surface-container-low py-32">
+<div class="px-12 max-w-[1440px] mx-auto">
+<h2 class="font-headline text-center text-3xl mb-16">The Atelier Categories</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12">
+<a class="group text-center" href="#">
+<div class="aspect-[3/4] mb-6 bg-surface-container-highest overflow-hidden rounded-full">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="close up of a modern pre-draped saree in emerald green satin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvsbp2XxPbIztu4hIH8wSLY-BCKrXmgnVN9X8_OeSvxHuxGcFxltcye0vWUVGf48rzG7TWghaS2sXJ3xbHIDDvM8b1Fn8RQg9Fyvnhp9WkQV8_LJ6Xnr5Nd22STGDvl_oQ7AKdjjm1djMvUt-OPEa0DwwRanVSfeV1uWVmJYEQKja-A4ttVJYEB2751W4GnSyZKhtn6GZ6zeoVklLjgs1MB6iUzsELokSLWogb3BT_GjKDp38gvqbVmS7uZ1usJvaHAWPgmApwFD-M"/>
+</div>
+<span class="font-headline text-lg italic">Drapes</span>
+</a>
+<a class="group text-center mt-12" href="#">
+<div class="aspect-[3/4] mb-6 bg-surface-container-highest overflow-hidden rounded-full">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="minimalist tailored long jacket with kashmiri embroidery accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7-hRMMpmYtvKKkyAfH7ZPFMzbQM6saTivejtmP1gLRwUo_vVyn75A0wf1_5uf_lP97lSsA43sBa8faBOa6lyMlBO-E_9VsM_BGx7gwzfLgwZy4iVm2wD5S0N_bkvLGo3wn0wWYcVwUy8NmvynTgTE5XXq0QC7eNxdxjHpUEPn7cbySDvLQT8TX7YmWjR8DaDIEaVJ2Wq-pKWxJq-RPNvxewVF12uNI1F_aKxm61zgkJgOOdM7-X4iz7-O-Yws3ITXqqx70XgKLl48"/>
+</div>
+<span class="font-headline text-lg italic">Outerwear</span>
+</a>
+<a class="group text-center" href="#">
+<div class="aspect-[3/4] mb-6 bg-surface-container-highest overflow-hidden rounded-full">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="chic linen tunic with modern geometric block prints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjWqGvoByDNhbVtRzlwhXDUwOfPdWCwbvONirLp6fNC5oyhfXeI0paGKByUZFGB1GCgzKAXHRp_eJfOGodzL5hpSYcXSRMk2k4JB-eBOBgNCys08XugBAGJqqv3KcZunP0a7pKeVWZ9q_H2zdtLjGGWRUaiaK_KHmuw7M3hK0Ztt1VGS7zBsdoEwkAxa8jTVa-ZtaPUtoR1re8ee_sPf8dg2VJ4RiyPl7Yty_a06PkIk70JlrmrzU5dHaS5wD2Bj52prsQrUDe_AFv"/>
+</div>
+<span class="font-headline text-lg italic">Tunics</span>
+</a>
+<a class="group text-center mt-12" href="#">
+<div class="aspect-[3/4] mb-6 bg-surface-container-highest overflow-hidden rounded-full">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="stylish wide leg trousers with traditional gota patti work on the hem" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ4z9gzHu5m-096E8mJQcNHmq3_pexvjuM3pV8UGacUzqiqKrIzXLhJKtjc7Az1-QDdQD-xpl578aX6yngozDcV0ylVgTbh_HYw59ipsBOtWrS-GxxFYqRmqYggm8SgF3WjIJIvtKesGFOLnYNxX-f7moQSjXXPw66co-U4syZN91E3RBvMEOm7lsjhjixNu8JzzCkWebqFBrtFTqx1XdyITLXrE3AvUbNAlf3NtUSkp3Iqc3n-1LRBnBnYi3un-GRtVl4M17ea0AG"/>
+</div>
+<span class="font-headline text-lg italic">Bottoms</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Shop the Look -->
+<section class="py-32 overflow-hidden">
+<div class="px-12 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<img class="w-full h-auto editorial-asymmetry shadow-2xl" data-alt="full length shot of a model wearing a complete indo-western ensemble with accessories against a beige textured wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr4syTp0nUIdiOo4qp7wf0wMl_ms5FK_weifjTqk_63DQJo2Al9yMUx4X9Ju23m8-wKjoNd0wJHz5Y-QObpsJOW6pYPjTRwqpwCWjOHf2dJvRywlQaO0mL6cqbhIurbImX4kTlFy5ffCYT_wbp-cxADbv7chaROpsGSAY9hB2j4_UGhR9i5LxS5jQY5gxTg_OawWACqClkB448tRusdTWgBEl-dybiYxY5-yyvvN_hByfHBVlhNLAX5oq3Vof0NEmff0ZIcMqFv_U0"/>
+<!-- Shoppable Pins -->
+<button class="absolute top-1/4 right-1/4 w-8 h-8 bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center group animate-pulse">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+<div class="absolute hidden group-hover:block left-10 bg-white p-3 shadow-lg min-w-[150px] rounded-lg">
+<p class="text-[10px] uppercase font-bold text-secondary">Silk Chiffon Cape</p>
+<p class="text-xs text-on-surface">₹12,500</p>
+</div>
+</button>
+<button class="absolute bottom-1/3 left-1/3 w-8 h-8 bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center group">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+<div class="absolute hidden group-hover:block right-10 bg-white p-3 shadow-lg min-w-[150px] rounded-lg">
+<p class="text-[10px] uppercase font-bold text-secondary">Tapered Dhoti Pants</p>
+<p class="text-xs text-on-surface">₹8,900</p>
+</div>
+</button>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-5xl mb-8 leading-tight">The Modern Heirloom <span class="block italic text-secondary">Concept</span></h2>
+<p class="text-on-surface-variant leading-relaxed mb-10 text-lg">
+                        Our pieces are designed to be lived in, loved, and passed down. Each silhouette is a dialogue between the structured precision of Western tailoring and the fluid grace of Indian textiles.
+                    </p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-outline"></span>
+<span class="text-sm font-label uppercase tracking-widest">Hand-loomed in Benares</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-outline"></span>
+<span class="text-sm font-label uppercase tracking-widest">Custom Tailored to Fit</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-outline"></span>
+<span class="text-sm font-label uppercase tracking-widest">Ethically Sourced Materials</span>
+</div>
+</div>
+<button class="px-12 py-5 bg-inverse-surface text-white font-label text-xs tracking-[0.2em] uppercase rounded-lg hover:shadow-xl transition-all">
+                        Discover the Craft
+                    </button>
+</div>
+</div>
+</section>
+<!-- Instagram Gallery -->
+<section class="pb-32">
+<div class="px-12 mb-12 flex justify-between items-center">
+<h2 class="font-headline text-2xl tracking-tight italic">#VeniyaraAtelier</h2>
+<span class="text-xs text-on-surface-variant font-label">Follow us for daily inspiration</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-6 gap-2 px-4">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="aesthetic close up of a model's hands wearing vintage silver rings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaooTsZNL30bo2HOhtTKfL7J-bCATZG0McwitTT0k3zAAOKr1NkVStfzRjv8ZCWoKcpZT98Tkpm6EyXMxKv90sJlJ6ii3kToIq_R_j4QVAuhqJWwyx6O9F0076DSMTCplzstZR89NzQOeLxG1UYTTBziwhTvxEcSp8aLawWp3YltAuRGsY6nGFCFeoC6Bmet5dMXX6EIW6Kw1v87qXhhY5h5XvdkqxE6bnXVKFrrjyG_-oaPDSJ0gEB3XCkl9cHi2lSUZgqd22Xv8p"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="scenic view of an old Rajasthani palace courtyard with terracotta tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3l4kijAtMvff2esGBROAgO88K4ZvpBfqwq9CVkOANG7XeBwnvzUOYWTnhGOx9vRmnu2nafFJB3ZQTtdOsjI1I5aUdtFlr-FKqqXMWhk18NGngVjWCY-wt4N59NWsRl3NqASqBZH7OECnAZEEKLMl8BPrLZZaXyb3b23dx5Ob9j34PQMiVRb9gGDWA6ctaUnLhipd68SKOUjkA4kPlnvsfGhGfBjnMtVhiJ6KIxDEAAtpWqUt_KioNfq_JtY5Jo44jhl1zqGF7M4Xy"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="moodboard with fabric swatches in earthy tones and dried flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2GDOYEEXW-VoaxHKWNf_ZJtMX4h0_RYzcx_OQ3ZTeYCPI_fdArgjevJMVFgFEeb0r9RuKJz5vLbreG9kXjKObr5gdwRdodaBpQI0Oh37pPzbx6XUBbrG4h-D_V2Mvql54tCUkBCHRc_sxKWbI6H9gUUrhwshOTpOmps9ccvyWxaF1jaFd6ozC2NFqiw9Xl-kLtKRyRa0stTRXoxDbtdu-vgY5fnV-5S7acWmblY4eRX5a6f2uVD8CpDRhBTz7EaKbVejdgOO9hf6i"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="elegant woman leaning against a stone pillar in a modern silk tunic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrwSRc8gwFi2BVnHh21NfZRi0ROpNV4geBrnVmMRZFM0b2KgbhttWu1ncg30DsakWNQJJk-utji00Z5rU4kPhnbtSrpbtw1JfCHCX1i8N6b8omZcnU8gubFtPtVEZgNODYXEpMWHG2GlxzRoAFaJcoek6kPZD3xz-_u75BFdCJJIPNwcQfKaxrDCHwyxHim8kEsNW9As-GMOH4LjJjqqw_FvMw8iYLUtxl6iU_3AwV3z34l72IGk_s_N9t5HiIlaBki9eIA9hDJOcg"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="flatlay of luxury perfume bottle and delicate lace fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB29KY_8z1kIlxZD_SuDwBJHKye0HELveon6EfFB3B5KCbQsytG_7t5IilJdXA2fA-BM_-9KFCVRBnj7hkic3BAcWS02C6n17OWcd36D4WMQKobZJzBSFRmVgjcQ2VouzxAjsO0er-RtUJOJJI72q6jd97lI5zg5ej_JTyN3M_ODxSkSK5DL0TyAxfl-H5zAR_Y6ychpbtg57LtxscZ8gS-coR0PWhw8a386KN35-ojWqjErIwj73DvJpgZGmhSXEzK7ij-GENPAhM"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="detail of golden thread weaving process on a traditional wooden loom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp_yxidC7Ie260Bs6mWAKDKeQugd9vQUMX0ETUdz4lh07ZvuD6W9VU1UZWhwM5ZZ39gHFAboghQo_I7IycPi17TTAr-WqAxnEvFbN8ybOpPb-gBpKzOkRZgju9Sh4VK8RuvLxsIgT3UxvNxlCn7mA3MHf0OFOAe3H3JHit-jI7VzZVnAZK8IcIbjSoDzEiQdAFivoIIjxTkUlLeNEhPUCvktUWnGgrvP5Vxjab44dlKPGxIvdOlOHyUX-o063dB2JR0UjIKKiCq-Er"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-neutral-950 w-full py-16 px-12 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<a class="flex items-center" href="#"><img alt="Veniyara Icon" class="h-10 w-auto dark:invert opacity-90 mr-3" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara" class="h-8 w-auto dark:invert opacity-90" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></a>
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400 max-w-[200px]">
+                    Crafting narratives through contemporary textiles. Designed in London, crafted in Jaipur.
+                </p>
+<div class="flex gap-4 mt-2">
+<a class="text-neutral-500 hover:text-neutral-800 transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="text-neutral-500 hover:text-neutral-800 transition-colors" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface mb-2">Collections</h4>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">New Arrivals</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Festive Edit</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Everyday</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Signature Jewelry</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface mb-2">Information</h4>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Sustainability</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Shipping &amp; Returns</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Contact Us</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Store Locator</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface mb-2">Newsletter</h4>
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 mb-2">Join our inner circle for exclusive previews.</p>
+<div class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-xs w-full font-label tracking-wider placeholder:text-outline-variant/60" placeholder="Email Address" type="email"/>
+<button class="text-xs font-bold tracking-widest hover:text-secondary transition-colors">JOIN</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-neutral-200/40 text-center">
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">© 2024 Veniyara Atelier. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

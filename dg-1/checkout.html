@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "inverse-surface": "#0e0e0c",
+                        "on-secondary-fixed-variant": "#6b5841",
+                        "primary-dim": "#535252",
+                        "on-secondary-fixed": "#4d3c27",
+                        "surface-variant": "#e2e3d9",
+                        "on-primary-container": "#525151",
+                        "on-error-container": "#752121",
+                        "error-container": "#fe8983",
+                        "background": "#fbf9f4",
+                        "surface-container-highest": "#e2e3d9",
+                        "tertiary-container": "#fde7d3",
+                        "secondary-container": "#f8dec1",
+                        "on-tertiary-fixed-variant": "#6d5e4f",
+                        "on-tertiary-container": "#635445",
+                        "surface": "#fbf9f4",
+                        "on-background": "#31332c",
+                        "tertiary-fixed-dim": "#eed9c6",
+                        "tertiary-dim": "#5f5142",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-primary": "#ffffff",
+                        "surface-dim": "#d9dbcf",
+                        "primary-container": "#e5e2e1",
+                        "surface-container": "#efeee6",
+                        "surface-container-low": "#f5f4ed",
+                        "primary-fixed": "#e5e2e1",
+                        "secondary": "#6f5c45",
+                        "outline-variant": "#b1b3a9",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "on-surface-variant": "#5e6058",
+                        "outline": "#797c73",
+                        "tertiary": "#6c5c4d",
+                        "on-primary-fixed": "#403f3f",
+                        "on-tertiary-fixed": "#504234",
+                        "on-surface": "#31332c",
+                        "on-error": "#fff7f6",
+                        "on-tertiary": "#fff7f3",
+                        "secondary-dim": "#62503a",
+                        "surface-container-high": "#e8e9e0",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-primary": "#faf7f6",
+                        "inverse-on-surface": "#9e9d99",
+                        "error-dim": "#4e0309",
+                        "tertiary-fixed": "#fde7d3",
+                        "secondary-fixed": "#f8dec1",
+                        "on-secondary": "#fff7f3",
+                        "secondary-fixed-dim": "#ead0b3",
+                        "primary": "#5f5e5e",
+                        "on-secondary-container": "#614f38",
+                        "error": "#9f403d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #31332c;
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-text { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar (Distraction-Free) -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-neutral-200/20 dark:border-neutral-800/20">
+<div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1920px] mx-auto">
+<a class="flex items-center" href="#"><img alt="Veniyara Icon" class="h-10 md:h-12 w-auto object-contain dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara Name" class="h-6 md:h-8 w-auto object-contain dark:invert ml-2" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></a>
+<div class="flex items-center gap-6">
+<span class="text-xs font-label tracking-widest text-on-surface-variant uppercase">Secure Checkout</span>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lock">lock</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Column: Cart & Checkout Steps -->
+<div class="lg:col-span-7 space-y-16">
+<!-- Section 1: Cart Items -->
+<section>
+<h2 class="font-headline text-3xl tracking-wide mb-10 text-on-surface">Your Selection</h2>
+<div class="space-y-8">
+<!-- Cart Item 1 -->
+<div class="flex gap-6 items-start group">
+<div class="w-32 h-44 overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a handwoven silk saree with intricate gold zari embroidery in a contemporary minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzKw1IKbQU6p3fPmXVFvM9JEQSPbs4JS9AABWHqR2M2vU9f9jH9oULplGnz7D5QAaMhz_OoFeV9uCh3oN1o2OD3ndBthPmjNbbTncl2Cyat0AzkHuOo4OLJfy36MeForR4vETTly6lNK7UKHFVmzggNtQIFCKpU5XKywDzhfk7zAcpWyMIkrZSflM5YUBSy-JcWuauEJb2PlEyNLyU-R08CtQc14QaVKR9yZRI6R8ZilCXXv3Ukq96hJGKg5JdB4bqSzIUyqmYXec9"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-2 h-44">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Mogra Silk Cape Set</h3>
+<p class="font-label text-xs uppercase tracking-tighter text-on-surface-variant mt-1">Ivory / Size Small</p>
+</div>
+<p class="font-body text-sm font-semibold">₹24,500</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center border border-outline-variant/30 px-3 py-1 gap-4">
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-sm" data-icon="remove">remove</span></button>
+<span class="text-xs font-medium">1</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+<button class="text-xs uppercase tracking-widest text-outline hover:text-error transition-colors">Remove</button>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="flex gap-6 items-start group">
+<div class="w-32 h-44 overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern indo-western silhouette dress in soft terracotta cotton hanging against a minimalist placeholder wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtw0QJ9y0YTq1Dwm_nvDVDEt9CZ5q7ukWM2FdNeW5KAZ7NK9dDKJuZ5tZnByCTPVBI5fBUjy1LLOXYPue-2vbZRR51YVAlBjklqQRf82Snb3kooRcJcLjgJLkYO3GA5x4VcH1GPz5zrDnooqkRSSF-XgBaPSlZBJU64d13VqBBMIGDZbXKBg0BLc-1ymUSxxVMMxBr5lfckMDnqtZJ2xp4e3dqUtXEscHg_HRXEypWy95SGNWF2Nh6tJCp4uKylA4BEeJgbnuSlC-O"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-2 h-44">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Dune Pleated Co-ord</h3>
+<p class="font-label text-xs uppercase tracking-tighter text-on-surface-variant mt-1">Terracotta / Size Medium</p>
+</div>
+<p class="font-body text-sm font-semibold">₹18,200</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center border border-outline-variant/30 px-3 py-1 gap-4">
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-sm" data-icon="remove">remove</span></button>
+<span class="text-xs font-medium">1</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+<button class="text-xs uppercase tracking-widest text-outline hover:text-error transition-colors">Remove</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Checkout Form -->
+<section class="space-y-12">
+<!-- Contact Information -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="bg-primary text-on-primary w-6 h-6 flex items-center justify-center text-[10px] font-bold">1</span>
+<h2 class="font-headline text-xl tracking-wide uppercase text-on-surface">Contact Information</h2>
+</div>
+<div class="space-y-6">
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="Email Address" type="email"/>
+</div>
+<div class="flex items-center gap-2">
+<input class="rounded-none border-outline-variant text-primary focus:ring-0" id="newsletter" type="checkbox"/>
+<label class="text-xs text-on-surface-variant tracking-tight" for="newsletter">Keep me updated on new atelier arrivals and exclusive journals.</label>
+</div>
+</div>
+</div>
+<!-- Shipping Address -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="bg-primary text-on-primary w-6 h-6 flex items-center justify-center text-[10px] font-bold">2</span>
+<h2 class="font-headline text-xl tracking-wide uppercase text-on-surface">Shipping Address</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<input class="bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="First Name" type="text"/>
+<input class="bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="Last Name" type="text"/>
+<div class="md:col-span-2">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="Address Line 1" type="text"/>
+</div>
+<input class="bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="City" type="text"/>
+<input class="bg-transparent border-b border-outline-variant/30 py-4 px-0 focus:outline-none focus:border-primary transition-colors text-sm placeholder:text-outline-variant/60" placeholder="Postal Code" type="text"/>
+</div>
+</div>
+<!-- Payment -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="bg-surface-container-highest text-on-surface-variant w-6 h-6 flex items-center justify-center text-[10px] font-bold">3</span>
+<h2 class="font-headline text-xl tracking-wide uppercase text-on-surface opacity-50">Payment</h2>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Summary -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-low p-8 md:p-12 sticky top-32">
+<h2 class="font-headline text-2xl tracking-wide mb-10 text-on-surface">Order Summary</h2>
+<div class="space-y-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="font-medium text-on-surface">₹42,700</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Shipping</span>
+<span class="text-secondary font-medium tracking-wide uppercase text-[10px]">Complimentary</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Estimated Tax (GST)</span>
+<span class="font-medium text-on-surface">₹5,124</span>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<div class="flex justify-between items-end mb-10">
+<span class="font-headline text-lg uppercase tracking-widest">Total</span>
+<span class="font-body text-2xl font-bold tracking-tight">₹47,824</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 text-xs font-bold uppercase tracking-[0.3em] hover:bg-primary-dim transition-all duration-300 shadow-sm active:scale-[0.98]">
+                                Continue to Payment
+                            </button>
+<div class="mt-8 space-y-4">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="workspace_premium">workspace_premium</span>
+<span class="text-[10px] uppercase tracking-widest">Ethically Crafted in our Atelier</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="history">history</span>
+<span class="text-[10px] uppercase tracking-widest">14-Day Boutique Returns</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mt-12">
+<details class="group">
+<summary class="list-none flex justify-between items-center cursor-pointer border-b border-outline-variant/20 pb-4">
+<span class="text-xs uppercase tracking-widest font-semibold text-on-surface-variant">Add Promotional Code</span>
+<span class="material-symbols-outlined text-lg transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="flex mt-4 gap-2">
+<input class="flex-grow bg-white border border-outline-variant/20 px-4 py-2 text-xs focus:outline-none focus:border-primary" placeholder="Enter Code" type="text"/>
+<button class="px-6 py-2 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Apply</button>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 mt-24 bg-stone-100 dark:bg-neutral-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<img alt="Veniyara Logo" class="h-8 md:h-10 w-auto object-contain dark:invert mb-6" src="https://lh3.googleusercontent.com/aida/ADBb0uh7X1lJNymh3aeyP5wpVcqzSjmx-GFdMo36D8yxjBkTxcRk8AlQfj4YA7eta7RN2LjBV0e_SurWYrm48S7__bMSAPNOeG_-b3h8jK0dCTqJ7WNCaa7iA2kkZMvurtHJ3OW2fj-Gws-F7Vzfhxbp2kpnBN3C338sStjypvQjWDmS18WRWhDnyXhxDIUXgtyjjwoJ7dQCDCMtEogS_IrZxB9pgf4jqL-HbfQN7wOftLymva-Iqdot72RDRyFIONyImboX4Nt8fLiczbg"/><div class="flex items-center mb-6"><img alt="Veniyara Icon" class="h-8 md:h-10 w-auto object-contain dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara Name" class="h-5 md:h-6 w-auto object-contain dark:invert ml-2" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></div>
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-500 dark:text-neutral-400 mt-4 leading-relaxed">
+                    Elevating Indian heritage through a lens of modern global silhouettes.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-2 text-on-surface">Client Care</h4>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 transition-transform duration-300 hover:translate-x-1" href="#">Shipping &amp; Returns</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 transition-transform duration-300 hover:translate-x-1" href="#">Store Locator</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 transition-transform duration-300 hover:translate-x-1" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-2 text-on-surface">Company</h4>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 transition-transform duration-300 hover:translate-x-1" href="#">Sustainability</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 transition-transform duration-300 hover:translate-x-1" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-2 text-on-surface">Connect</h4>
+<div class="flex gap-4">
+<a class="text-neutral-500 hover:text-neutral-800" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-neutral-500 hover:text-neutral-800" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-outline-variant/10">
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">© 2024 Veniyara Atelier. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

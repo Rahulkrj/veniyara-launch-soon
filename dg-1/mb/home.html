@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veniyara | The Digital Atelier</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "inverse-surface": "#0e0e0c",
+                    "on-secondary-fixed-variant": "#6b5841",
+                    "primary-dim": "#535252",
+                    "on-secondary-fixed": "#4d3c27",
+                    "surface-variant": "#e2e3d9",
+                    "on-primary-container": "#525151",
+                    "on-error-container": "#752121",
+                    "error-container": "#fe8983",
+                    "background": "#fbf9f4",
+                    "surface-container-highest": "#e2e3d9",
+                    "tertiary-container": "#fde7d3",
+                    "secondary-container": "#f8dec1",
+                    "on-tertiary-fixed-variant": "#6d5e4f",
+                    "on-tertiary-container": "#635445",
+                    "surface": "#fbf9f4",
+                    "on-background": "#31332c",
+                    "tertiary-fixed-dim": "#eed9c6",
+                    "tertiary-dim": "#5f5142",
+                    "surface-tint": "#5f5e5e",
+                    "inverse-primary": "#ffffff",
+                    "surface-dim": "#d9dbcf",
+                    "primary-container": "#e5e2e1",
+                    "surface-container": "#efeee6",
+                    "surface-container-low": "#f5f4ed",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary": "#6f5c45",
+                    "outline-variant": "#b1b3a9",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "on-surface-variant": "#5e6058",
+                    "outline": "#797c73",
+                    "tertiary": "#6c5c4d",
+                    "on-primary-fixed": "#403f3f",
+                    "on-tertiary-fixed": "#504234",
+                    "on-surface": "#31332c",
+                    "on-error": "#fff7f6",
+                    "on-tertiary": "#fff7f3",
+                    "secondary-dim": "#62503a",
+                    "surface-container-high": "#e8e9e0",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "on-primary": "#faf7f6",
+                    "inverse-on-surface": "#9e9d99",
+                    "error-dim": "#4e0309",
+                    "tertiary-fixed": "#fde7d3",
+                    "secondary-fixed": "#f8dec1",
+                    "on-secondary": "#fff7f3",
+                    "secondary-fixed-dim": "#ead0b3",
+                    "primary": "#5f5e5e",
+                    "on-secondary-container": "#614f38",
+                    "error": "#9f403d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-neutral-200/20 dark:border-neutral-800/20 flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4 flex-1">
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200">menu</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center gap-1">
+<img alt="Veniyara Icon" class="h-8 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/>
+<img alt="Veniyara Brand Name" class="h-3 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/>
+</div>
+<div class="flex items-center gap-4 justify-end flex-1">
+<button class="hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 hidden sm:block">
+<span class="material-symbols-outlined text-neutral-700 dark:text-neutral-200" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-0">
+<!-- Hero Section -->
+<section class="relative h-[795px] w-full overflow-hidden">
+<img alt="Veniyara Atelier Hero" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="Stunning model in an intricate Indo-western fusion ensemble featuring embroidery, standing in a minimalist stone architectural setting with soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQOMqeCsFpWccsGTjb7hibYeP9irDHQyC5BPHaQV4p7tK2kdxEJGCguaNV-87i6bHTjN7RlMoxGrmKP634-Kx3OOz0WhntWTH1FsnmseDJmKepfNsVgR6nDmUCP4SJJodIs3b3YskztQjtCf7yrQan_yhhUlaoQIAI48uCwrIRxVcRfOQTWhs4YwjdkrqwPkDm8-Qq-6ys7LqryNJlUojYKEc_m0OqjUbG9l7B_VeavQADN0TgPcrZ8jGvhdOm0xnZDfYe43ADHJs4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-0 w-full px-8 flex flex-col items-start gap-4">
+<h1 class="font-headline text-4xl leading-tight tracking-wide text-on-background opacity-90">Grace in Every <br/>Silhouette</h1>
+<p class="font-label text-sm uppercase tracking-widest text-on-surface-variant max-w-[280px]">The Spring/Summer 2024 Atelier Collection is here.</p>
+<button class="mt-2 bg-primary text-on-primary px-8 py-4 text-xs uppercase tracking-[0.2em] rounded-DEFAULT shadow-sm hover:translate-y-[-1px] transition-transform">
+                    Explore Collection
+                </button>
+</div>
+<!-- Atelier Carousel Progress Bar -->
+<div class="absolute bottom-4 left-8 right-8 h-[1px] bg-outline-variant/20">
+<div class="h-full bg-secondary w-1/3"></div>
+</div>
+</section>
+<!-- New Arrivals (Horizontal Scroll) -->
+<section class="mt-20 px-6">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="font-headline text-2xl">New Arrivals</h2>
+<p class="font-body text-xs text-on-surface-variant mt-1 uppercase tracking-widest">Fresh from the Atelier</p>
+</div>
+<a class="text-[10px] uppercase tracking-widest border-b border-outline-variant/30 pb-1" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 snap-x snap-mandatory">
+<!-- Product Card 1 -->
+<div class="flex-none w-[75vw] snap-start">
+<div class="relative bg-surface-container-low aspect-[3/4] mb-4 overflow-hidden rounded-lg">
+<img alt="Ivory Silk Kurta Set" class="w-full h-full object-cover" data-alt="Minimalist ivory silk kurta with delicate gold piping displayed on a pale sand background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfwk8Syf25L2A8Zhw-Kb6d467Juqia-NhW_u0NV3djCgQlUe2_IIp3SnTVVrbjJSYNU8ie3bW3dip0pr1NfI1Jfxz5zqhm35OelFj2TReTT-li6ewfSyXjPSRYqVhqNi2Blw3620J7WZsEGrV2ypZvSTlwlQ8uc8UKZxzBHCm-emGlmaHIovPCDjVtimzOPnk5FNi049lN4IY6UgcD6_edf5uWc21TF6B1qBcMgST5TNzbW90O4kjEm_TJBALun5dNP_yYzZ2l-RJK"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-label text-sm text-on-surface">Ivory Silk Kurta Set</h3>
+<p class="font-body text-xs text-on-surface-variant">₹ 18,500</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex-none w-[75vw] snap-start">
+<div class="relative bg-surface-container-low aspect-[3/4] mb-4 overflow-hidden rounded-lg">
+<img alt="Earthy Tonal Cape" class="w-full h-full object-cover" data-alt="Luxurious flowing cape in burnt sienna silk with hand-stitched detailing, ethereal lighting, high fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeBqxOpgEokAp0nTriAiTs7sszWeyyvNpsOz-pUBE9S1IFGXqheWJrnVlGnMbwr2-CmG25KUfh_ZUJUuey8d5Unt4sPJYWrb6H2w1ws909juIjZkbM_F7R85tm5Ng-xM60krnI3nmsNz7zNul0zBbCBcbU25QdiemjvNait-SrRHo-8zyilSwX_9vdybJA6Mncg3zvCCvKgxhiuOaaelPPIe4juU6lEXonpjZFB01xTdA_RY8R8qs2XYFatz2Yf7Pax_TF4jd7DVmE"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-label text-sm text-on-surface">Ochre Draped Cape</h3>
+<p class="font-body text-xs text-on-surface-variant">₹ 14,200</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Grid (Two-Column Bento) -->
+<section class="mt-24 px-6">
+<h2 class="font-headline text-2xl mb-8">Curated Edits</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 relative aspect-[16/9] overflow-hidden rounded-lg bg-surface-container-low">
+<img alt="Festive Edit" class="w-full h-full object-cover" data-alt="Elegant close up of rich textured Indian fabrics in gold and cream, layered artistically with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKaQWhWWFT8J0kxoFutvmhRn02kO-mul0ju8dvyYDqors4giP9hC8h_vCpj3k5aH6ecwmHlOD9OR-b40mfpQlqVHGaFgVnGa6o545fhSBO8boWrTmDhsqkbOfUah-56cX7mXDiApKh-7k46oBMOchWTvkfJ0jjnTOH75jfBGiZqKaiF83r8EClaeabiKkt_vmYRggR9txWcd0ObQ3Qai9aE6DrG6erh9MAdXxYLJw5yjZ07hGWovNK2I7VueRwKHn8DadWKT382FvH"/>
+<div class="absolute inset-0 bg-black/10 flex flex-col justify-center items-center text-center p-4">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-white mb-2">Signature Style</span>
+<h3 class="font-headline text-2xl text-white">Festive Edit</h3>
+</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low">
+<img alt="Western Wear" class="w-full h-full object-cover" data-alt="High-fashion modern minimalist dress in muted charcoal color draped over a clean gallery space bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjz_Hp0u8CGJfalkjpWdjTfqq497KDiUMyXyjqGOvvnwb8rdxkcItx0yz_dki39U709z9ipFI92p3F8voyMCdF3o4Obru8PKQPOcwUw60HYlpJATpszgWyWIPzKMLaObnIC7PGou96mkLFfHIl0txo1m39BPuzrPOL8Un_1QNplqac1cCXvAiPchNru4aJRpyRpdFBA_el7g06RatY7rAtmnCFuSwy9-fUjvF0GZvdpq21sGa8ryOxj2Me3Kg2pQoHJOg9fmyi7Oq-"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/40 to-transparent">
+<h3 class="font-headline text-lg text-white">Western</h3>
+</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low">
+<img alt="Accessories" class="w-full h-full object-cover" data-alt="Artisanal gold jewelry pieces arranged on a rough linen texture with warm afternoon sun shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSkXJ-MlvuiYrxWlSyPnGhpbJJKIU5uQY9ZvOWOzZyJ_mZSVAPVQ7ZnPp0kiALaux5bmVX6xg4q3yzeZFtHfzsuGn0CL-9XWr5iSbEo9U2H4e1utT9SWYlluGrcmnm7zmwn4XnyYY75EHny47BhbpTNX-4FLldmnvH-gqj4zoB0rqjCImks5jCDN6HXCHjKLChne8dioTQOVio9Ovj69rnMopPRHfMd-W6rg5OJJOycD0WR-3l5FixdMhlSuup8RQ9tItGpkUbVZ_"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/40 to-transparent">
+<h3 class="font-headline text-lg text-white">Adornments</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Gallery -->
+<section class="mt-24 px-6 overflow-hidden">
+<div class="flex flex-col items-center text-center mb-10">
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-outline mb-2">Follow the Journey</span>
+<h2 class="font-headline text-2xl italic">@VeniyaraAtelier</h2>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-8">
+<div class="flex-none w-40 h-40 rounded-full overflow-hidden border border-surface-container-highest p-1">
+<img alt="Instagram 1" class="w-full h-full object-cover rounded-full" data-alt="Behind the scenes photo of a fashion shoot, professional lighting setup and a model in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiGfbnL4BLsWRpQd6j5QFgRqqGgewgSVvzc4rsH9tPZlgjoBDthxkABAJeOy-gmqjcyarqbaHmGUa4XZYFI7NsK8G7RWskLXX02xFH2m3-_HDQ1Tq8ssoA3QaUcgc4ZE2_pqPbv0d2OVTuuwxLV9tB9rxjvXvhQARI0MjWXp7USeD8Ra7gLXT1YPiwlhSZg-fW25fbmfZ-4WQS1mv-eZp_V_x72Hq14S-iqz78PoVuSKfehm-0331TAho9zkgjjgU6ZPmSC3gBCTkp"/>
+</div>
+<div class="flex-none w-40 h-40 rounded-full overflow-hidden border border-surface-container-highest p-1">
+<img alt="Instagram 2" class="w-full h-full object-cover rounded-full" data-alt="Editorial close up of a model face with minimal high-end makeup and elegant expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPu4Ungl-RPk7Qrcvtkdx424cu93SLagwkVr5OwagtmFyz7K-5GpEDKHGXvOXkR5wYmKOQV9TkcWUMSWYnhHC_pJHnR2I2D9VYpYYZExwtpEo1aAy8kDB281gq0TECphGZeLibleJ1oZ-yw3Of8oQkzc0G1XyZQXk7eSGOVYgmfd52ivore3hyOQqD-CHSAcXx9pa33t7RIiNg2orkODPZ5noF0q-hnNAId0ewpCAgMe49xPL002yW9uckXXUvpE3VTcJnBcvl8HJ9"/>
+</div>
+<div class="flex-none w-40 h-40 rounded-full overflow-hidden border border-surface-container-highest p-1">
+<img alt="Instagram 3" class="w-full h-full object-cover rounded-full" data-alt="Full body shot of model in flowing white silk dress against a clean concrete wall architectural backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwx6NnzNWyp5CK3gxGT5M_X_SBlI_lXnY3BiLBGN8vT7rgWmlgjP25UppmIrFBUOCCAmVoJw-Mq91LbwES2i75wweNfwGs6W7jt4tSFBbjJuUZqqpl3ZqD_MGnbi6OMVleZXJDwYmFs8ByE85FsN5hsTLcrIrVxSJhkYW4To712HjV6zSRa0iRplOs5U3QG9h8CdTOsWm9oVRMUgztlH7RV2hLPYLPPhaH1fI9gVYlUcOS62vHtHp4YBbBFyer8qDvnpCtsY2K-Q55"/>
+</div>
+<div class="flex-none w-40 h-40 rounded-full overflow-hidden border border-surface-container-highest p-1">
+<img alt="Instagram 4" class="w-full h-full object-cover rounded-full" data-alt="Designer mood board with fabric swatches, color palettes, and charcoal sketches on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGKpBzChy-74iChnZYVsn8duvH6QlPElPoSHikvBDGlEAt8TkBqsbdK7MoAOQU61LktLmnlC-svsS6JWPB1gEll20KWahsbuUTMH3gGHCTO4zQx3NqLI2kCvUL8AcBRLMcbGlPo53gY2Zgn394_jeLC8NHq0u9s4gNURcGDL0vd-kbB22Xvpc4wBxMAfHPZ9vGX1akzE6dkDBbOnvxn1lTI4Q9_JmWmaxJ0maPD-Ohrq4FQr2HbvoGTAYl6qMndAjajLTDQZBaiQs_"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 mt-24 bg-stone-100 dark:bg-neutral-950 font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-2 items-start">
+<img alt="Veniyara Icon" class="h-10 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/>
+<img alt="Veniyara Brand Name" class="h-4 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/>
+</div>
+<p class="max-w-[200px] leading-relaxed">Conscious luxury for the modern individual. Merging tradition with modern silhouettes.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Sustainability</a>
+<a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Shipping &amp; Returns</a>
+<a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Contact Us</a>
+<a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Store Locator</a>
+</div>
+<div class="flex flex-col gap-6">
+<span class="uppercase tracking-widest text-[10px] text-neutral-400">Newsletter</span>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-neutral-300 dark:border-neutral-700 pb-2 focus:outline-none focus:border-primary transition-colors text-xs placeholder:text-neutral-400" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-2">
+<span class="material-symbols-outlined text-neutral-400">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-neutral-200/50 dark:border-neutral-800/50 text-center opacity-60">
+            © 2024 Veniyara Atelier. All rights reserved.
+        </div>
+</footer>
+</body></html>

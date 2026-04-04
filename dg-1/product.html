@@ -1,0 +1,309 @@
+<html class="light" lang="en"><head></head><body class="bg-background text-on-background">```html
+
+
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "inverse-surface": "#0e0e0c",
+                        "on-secondary-fixed-variant": "#6b5841",
+                        "primary-dim": "#535252",
+                        "on-secondary-fixed": "#4d3c27",
+                        "surface-variant": "#e2e3d9",
+                        "on-primary-container": "#525151",
+                        "on-error-container": "#752121",
+                        "error-container": "#fe8983",
+                        "background": "#fbf9f4",
+                        "surface-container-highest": "#e2e3d9",
+                        "tertiary-container": "#fde7d3",
+                        "secondary-container": "#f8dec1",
+                        "on-tertiary-fixed-variant": "#6d5e4f",
+                        "on-tertiary-container": "#635445",
+                        "surface": "#fbf9f4",
+                        "on-background": "#31332c",
+                        "tertiary-fixed-dim": "#eed9c6",
+                        "tertiary-dim": "#5f5142",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-primary": "#ffffff",
+                        "surface-dim": "#d9dbcf",
+                        "primary-container": "#e5e2e1",
+                        "surface-container": "#efeee6",
+                        "surface-container-low": "#f5f4ed",
+                        "primary-fixed": "#e5e2e1",
+                        "secondary": "#6f5c45",
+                        "outline-variant": "#b1b3a9",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "on-surface-variant": "#5e6058",
+                        "outline": "#797c73",
+                        "tertiary": "#6c5c4d",
+                        "on-primary-fixed": "#403f3f",
+                        "on-tertiary-fixed": "#504234",
+                        "on-surface": "#31332c",
+                        "on-error": "#fff7f6",
+                        "on-tertiary": "#fff7f3",
+                        "secondary-dim": "#62503a",
+                        "surface-container-high": "#e8e9e0",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-primary": "#faf7f6",
+                        "inverse-on-surface": "#9e9d99",
+                        "error-dim": "#4e0309",
+                        "tertiary-fixed": "#fde7d3",
+                        "secondary-fixed": "#f8dec1",
+                        "on-secondary": "#fff7f3",
+                        "secondary-fixed-dim": "#ead0b3",
+                        "primary": "#5f5e5e",
+                        "on-secondary-container": "#614f38",
+                        "error": "#9f403d"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                }
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            }
+            body { font-family: 'Manrope', sans-serif; background-color: #fbf9f4; color: #31332c; }
+            h1, h2, h3 { font-family: 'Noto Serif', serif; }
+            .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+            .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+            .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e3d9; border-radius: 10px; }
+        </style>
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-neutral-200/20 dark:border-neutral-800/20">
+    <div class="flex justify-between items-center px-12 py-4 max-w-[1920px] mx-auto">
+    <div class="flex items-center">
+    <div class="flex items-center gap-3">
+    <img alt="Veniyara Icon" class="h-10 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/>
+    <img alt="Veniyara Wordmark" class="h-6 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/>
+    </div>
+    </div>
+    <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-700 dark:text-neutral-200">
+    <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">New Arrivals</a>
+    <a class="text-neutral-900 dark:text-white border-b border-neutral-400 pb-1 hover:opacity-70 transition-opacity duration-300" href="#">Collections</a>
+    <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Atelier</a>
+    <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Sustainable</a>
+    <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Journal</a>
+    </div>
+    <div class="flex items-center gap-6">
+    <button class="hover:opacity-70 transition-opacity duration-300 scale-95 transition-transform duration-200">
+    <span class="material-symbols-outlined text-neutral-700">shopping_bag</span>
+    </button>
+    <button class="hover:opacity-70 transition-opacity duration-300 scale-95 transition-transform duration-200">
+    <span class="material-symbols-outlined text-neutral-700">person</span>
+    </button>
+    </div>
+    </div>
+    </nav>
+    <main class="pt-32 pb-24 px-6 md:px-12 max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+    <!-- Product Images (Left) -->
+    <div class="lg:col-span-7 flex gap-4">
+    <div class="hidden md:flex flex-col gap-4 w-20 custom-scrollbar overflow-y-auto max-h-[800px]">
+    <div class="w-20 aspect-[3/4] bg-surface-container-low cursor-pointer opacity-100 border border-outline/20">
+    <img class="w-full h-full object-cover" data-alt="Close-up of premium silk fabric texture with intricate hand-embroidered floral patterns in soft ivory and gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZJgPstKbrpnjrKh6rlN-i_siV9ynMxJykDmL09YnXDZr5-Z_KtGRw1c8QnFVs4-WkkFYR1K0QTLKHpy3MX_cT6Oal2FGrRnFpHeF2YNIDcFll_h0DZIH-RQInM0Zeeh9XWEeTaps5GghM4rmR7XOtNESR9rWwanu0fsTS1HvQ62AZ61rpLrgFn8Vmm5SOUUkNJF1Uffc5cNaQhvajqyfQBGzoLf39ntGcIpC9N2LHlzMDAjNuZM9FXNPvcdiDSgQ2OAYNh1fxAOz7"/>
+    </div>
+    <div class="w-20 aspect-[3/4] bg-surface-container-low cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+    <img class="w-full h-full object-cover" data-alt="Side profile of a woman wearing a modern indo-western silk draped gown in soft beige, editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOgIdyOpLehi3xMze-_loROyFeG-hlBjbnvvu6ToxQd3pGXS_elqPOPzAtBHAtHgR_yj8193H-CodD7_TpXgXHDt-p_j12vZqTTc87r-HpN96BTKAWPCzIXxu4DIm6IT1y0tAo0TxzeVYFsixdFKkdkj6ES2i1VCkS1bmjku2Z808EAl7TtiyGN-L6PXsjIw_Qg97HbU2N1BTzTFRk-VY7MGBJOvQzDZkiheAiOQCprOrJHCFYUwxe0JAqLzsC-PYJgpnCpuMZddLl"/>
+    </div>
+    <div class="w-20 aspect-[3/4] bg-surface-container-low cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+    <img class="w-full h-full object-cover" data-alt="Full length shot of a luxury fashion garment hanging on a minimalist brass rail in a sunlit atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnavs8GsRU5nOnCxuTASwS09-DOgYZBLK59cmDvBrQYfzW6KAiskjTWauB994Rzi2zqOwRhHQia_LGAvJIth12YLFSZwkga-hg6ryKTo2rJP_7ttUXcHkyrosuV3ePnscnZnX6pu8tzJrnTwR6IOru3bcQT1aM5PH8CUncVJaJQ3NVfOKqJFfy2Oxv8YiZtq5aalAkqotuz7KVQHWACZmg0Ane42FOmahVTNZjmE8c7thXH-OWTCYb-qFjjttcvbggrxYIuTzCPNgT"/>
+    </div>
+    </div>
+    <div class="flex-1">
+    <div class="w-full aspect-[3/4] bg-surface-container-low overflow-hidden">
+    <img class="w-full h-full object-cover" data-alt="High-end fashion editorial of a handcrafted indo-western silk ensemble, soft natural light, minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCUZ8QQGW9O6Jx473cW2QmPKi3KVoH6BH21pVr8s_kC4k1Vrd53lsq29m-wlDnBbZz_bUPcLx3b1iYU7wAeHgijwVs8Ack5Cvd89yRXp0CV9AiNmCYtTLaH2goNIMZLlwpeyEaKMYvysDl4X14IV7Wq1bCEYPyxeC6zWFMN-bMTzCvxouF1dVG5f_veq1GG4q9C-gy3_kpP4sHI_4rfboA9ZnRhj55FFRPn_8cS6DSBuaSRpzdOHaUc5pdrIAadjC4P8CLrU1nUWh4"/>
+    </div>
+    <!-- Signature Atelier Carousel Progress Bar -->
+    <div class="mt-6 flex gap-2 h-0.5 bg-outline-variant/20">
+    <div class="w-1/3 bg-secondary h-full"></div>
+    <div class="w-1/3 h-full"></div>
+    <div class="w-1/3 h-full"></div>
+    </div>
+    </div>
+    </div>
+    <!-- Product Details (Right) -->
+    <div class="lg:col-span-5 flex flex-col gap-10">
+    <header>
+    <p class="text-xs tracking-widest uppercase text-outline font-label mb-2">Festive Edit 2024</p>
+    <h1 class="text-4xl md:text-5xl tracking-tight leading-tight mb-4">Aurelia Silk Draped Tunic</h1>
+    <p class="text-2xl font-light text-on-surface">₹ 34,500</p>
+    </header>
+    <!-- Selection Sections -->
+    <div class="space-y-8">
+    <div>
+    <div class="flex justify-between items-center mb-4">
+    <span class="text-xs uppercase tracking-widest font-semibold">Select Size</span>
+    <button class="text-xs uppercase tracking-widest underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Size Guide</button>
+    </div>
+    <div class="flex flex-wrap gap-3">
+    <button class="px-6 py-2 border border-outline/20 text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">XS</button>
+    <button class="px-6 py-2 border border-primary text-xs uppercase tracking-widest bg-surface-container-low">S</button>
+    <button class="px-6 py-2 border border-outline/20 text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">M</button>
+    <button class="px-6 py-2 border border-outline/20 text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">L</button>
+    <button class="px-6 py-2 border border-outline/20 text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">XL</button>
+    </div>
+    </div>
+    <div>
+    <button class="w-full bg-primary text-on-primary py-5 text-sm uppercase tracking-[0.2em] font-semibold hover:bg-primary-dim transition-all active:scale-[0.98]">
+                                Add to Cart
+                            </button>
+    <button class="w-full mt-3 border border-outline/20 py-5 text-sm uppercase tracking-[0.2em] font-medium hover:bg-surface-container transition-all">
+                                Wishlist
+                            </button>
+    </div>
+    </div>
+    <!-- Description & Info -->
+    <div class="space-y-6 pt-6 border-t border-outline-variant/10">
+    <div>
+    <h3 class="text-sm font-semibold uppercase tracking-widest mb-3">Product Description</h3>
+    <p class="text-sm text-on-surface-variant leading-relaxed font-light">
+                                A masterpiece of modern tailoring blended with traditional soul. The Aurelia Tunic features hand-loomed mulberry silk with delicate zardozi work on the cuffs. The asymmetric drape provides a fluid silhouette suitable for both gala evenings and intimate gatherings.
+                            </p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+    <div class="flex items-center gap-3 py-4 bg-surface-container-low px-4">
+    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+    <span class="text-[10px] uppercase tracking-widest font-medium">Premium Silk</span>
+    </div>
+    <div class="flex items-center gap-3 py-4 bg-surface-container-low px-4">
+    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+    <span class="text-[10px] uppercase tracking-widest font-medium">Artisan Made</span>
+    </div>
+    <div class="flex items-center gap-3 py-4 bg-surface-container-low px-4">
+    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+    <span class="text-[10px] uppercase tracking-widest font-medium">Easy Returns</span>
+    </div>
+    <div class="flex items-center gap-3 py-4 bg-surface-container-low px-4">
+    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+    <span class="text-[10px] uppercase tracking-widest font-medium">Luxe Quality</span>
+    </div>
+    </div>
+    </div>
+    <!-- Care Instructions -->
+    <details class="group border-t border-outline-variant/10">
+    <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
+    <span class="text-xs uppercase tracking-widest font-semibold">Care &amp; Details</span>
+    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+    </summary>
+    <div class="pb-6 text-sm text-on-surface-variant font-light space-y-2">
+    <p>• Dry Clean Only</p>
+    <p>• Iron on low heat using a press cloth</p>
+    <p>• 100% Hand-loomed Mulberry Silk</p>
+    <p>• Avoid direct contact with perfume and water</p>
+    </div>
+    </details>
+    </div>
+    </div>
+    <!-- Related Products Section -->
+    <section class="mt-32">
+    <div class="flex justify-between items-end mb-12">
+    <h2 class="text-3xl tracking-tight">You may also like</h2>
+    <a class="text-xs uppercase tracking-widest border-b border-outline/40 pb-1" href="#">View Collection</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <!-- Related Card 1 -->
+    <div class="group cursor-pointer">
+    <div class="aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant cocktail dress in soft silk fabric draped over a mannequin in a designer studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfLwUW0q0S1vmIUUAAZ6YCWOy0DmkYa8YQyf59l3KAlqGEcraP4rjpENTBMW9wHxth_iBDbVoQaMSGq0cv74mT8VpOufw1_k65ZiK5-361PNTShpCHUsb_Tky0RO0qvkpSrnVJqdczRIoFOzAOoQDZeArp5mz2hXJstHG4rLEPDs6MMpCrckD5hd1eyyCJJRn6kkV1eOc3b6i-Biv-EF83hWFnxEIDmWYTQ7bFfrm9IWS270t8MxxFPfsLtsQE5kwr8Dbxk5Zja9Mx"/>
+    </div>
+    <h3 class="text-sm font-medium mb-1">Zehra Pleated Gown</h3>
+    <p class="text-xs text-on-surface-variant">₹ 42,000</p>
+    </div>
+    <!-- Related Card 2 -->
+    <div class="group cursor-pointer">
+    <div class="aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist luxury fashion portrait of a model wearing a tailored linen jacket in earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA6fE2UXLsz33AOJII_F1RjhkFV1T2rHa5boQYvfkgX13p6KNum4h6y9qkBGC9VI0ZifpdG3e2L08CO_sNZNAP83ccn9Yrdl4uQqEFppTY6WHHNK6-s5Dk7C5OQ9mKDsTAacNs77Tl7T2dK5m7tYPidzNn3deXFATbIUVWNi4bUpEtj_JtPUdwRCFY9H2u4gynxjxhA5B41pfd0Hhu6P6LkusZdKmBrBQRVE63Vk48Av9eKl0IigEZdl6Sbjof-ncFMMRbH2z2luQ8"/>
+    </div>
+    <h3 class="text-sm font-medium mb-1">Luna Organza Wrap</h3>
+    <p class="text-xs text-on-surface-variant">₹ 28,500</p>
+    </div>
+    <!-- Related Card 3 -->
+    <div class="group cursor-pointer">
+    <div class="aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up shot of a folded cashmere sweater on a wooden table, soft texture and neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXJgxrgpDGJ_yxrZmBM2kEQ8g0m7ODxaW4qVcnrzH7s7P-rsYXIy6vOif7uEJv4PsqDMgHl86ZLYc8ncz9D2QXOIOf-qGaEwflp2vXyHA-fpMElDgYdIhNP0cgjhTjZ10FgkfFIctLIL5BFT-0WunXpJ3J6DGirgJSdJ0uFygtr5WPBkPRndaxxXxQlBkz3ArLVIlsHNNVoDquN0hV-tHXtKdLdn1w96A1aNb1PdGvabOqoGT7ALvkne-NZISMHyKC6mXILWLL21E-"/>
+    </div>
+    <h3 class="text-sm font-medium mb-1">Iris Embroidered Cape</h3>
+    <p class="text-xs text-on-surface-variant">₹ 56,000</p>
+    </div>
+    <!-- Related Card 4 -->
+    <div class="group cursor-pointer">
+    <div class="aspect-[3/4] bg-surface-container-low overflow-hidden mb-4">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern fashion editorial shot of a woman in a flowing silk dress standing against a textured plaster wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa7_E3oCKKetsfWmEAX7--GAw2jYlMXaLKiuJ6XtFu_matA_37KuM45Fkx3QHqwKyRSalSfITzTUSzl6AWZRafp4aFa1j34jVowz5aWitmnqmycyaO2EV9fTbZUOnmoC4BV13yemXojL9xOqp9N6osDvZCQLeAsS2XgjR5nU5oYlYRfXQDI0buCoiUVvKd0MUmzmVUhD-XaKaLE5GicMHbVMiJbyL5cLmS8UrbC-68DtkbuTABne5YOZfuAK5XyQPCDW5QQBjtchX4"/>
+    </div>
+    <h3 class="text-sm font-medium mb-1">Sia Palazzo Set</h3>
+    <p class="text-xs text-on-surface-variant">₹ 31,000</p>
+    </div>
+    </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-16 px-12 mt-24 bg-stone-100 dark:bg-neutral-950">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+    <div class="md:col-span-1">
+    <div class="mb-6">
+    <div class="flex items-center gap-3">
+    <img alt="Veniyara Icon" class="h-8 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/>
+    <img alt="Veniyara Wordmark" class="h-5 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/>
+    </div>
+    </div>
+    <p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400 max-w-xs leading-relaxed">
+                        Celebrating the art of slow fashion. Handcrafted with soul in India, designed for the modern woman globally.
+                    </p>
+    </div>
+    <div class="space-y-4">
+    <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-neutral-800">Support</h4>
+    <div class="flex flex-col gap-2 font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">
+    <a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Shipping &amp; Returns</a>
+    <a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Contact Us</a>
+    <a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Store Locator</a>
+    </div>
+    </div>
+    <div class="space-y-4">
+    <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-neutral-800">Legal</h4>
+    <div class="flex flex-col gap-2 font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">
+    <a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Sustainability</a>
+    <a class="text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
+    </div>
+    </div>
+    <div class="space-y-4">
+    <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-neutral-800">Journal</h4>
+    <p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400 mb-4">
+                        Sign up for atelier updates and collection previews.
+                    </p>
+    <div class="flex border-b border-neutral-300 pb-2">
+    <input class="bg-transparent border-none text-[10px] uppercase tracking-widest focus:ring-0 w-full" placeholder="EMAIL ADDRESS" type="email"/>
+    <button class="material-symbols-outlined text-sm">arrow_forward</button>
+    </div>
+    </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-16 border-t border-neutral-200 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-['Manrope'] text-xs tracking-tight text-neutral-500">© 2024 Veniyara Atelier. All rights reserved.</p>
+    <div class="flex gap-6">
+    <span class="text-[10px] tracking-widest uppercase text-neutral-400">Instagram</span>
+    <span class="text-[10px] tracking-widest uppercase text-neutral-400">Pinterest</span>
+    </div>
+    </div>
+    </footer>
+    ```</body></html>

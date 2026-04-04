@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "inverse-surface": "#0e0e0c",
+                    "on-secondary-fixed-variant": "#6b5841",
+                    "primary-dim": "#535252",
+                    "on-secondary-fixed": "#4d3c27",
+                    "surface-variant": "#e2e3d9",
+                    "on-primary-container": "#525151",
+                    "on-error-container": "#752121",
+                    "error-container": "#fe8983",
+                    "background": "#fbf9f4",
+                    "surface-container-highest": "#e2e3d9",
+                    "tertiary-container": "#fde7d3",
+                    "secondary-container": "#f8dec1",
+                    "on-tertiary-fixed-variant": "#6d5e4f",
+                    "on-tertiary-container": "#635445",
+                    "surface": "#fbf9f4",
+                    "on-background": "#31332c",
+                    "tertiary-fixed-dim": "#eed9c6",
+                    "tertiary-dim": "#5f5142",
+                    "surface-tint": "#5f5e5e",
+                    "inverse-primary": "#ffffff",
+                    "surface-dim": "#d9dbcf",
+                    "primary-container": "#e5e2e1",
+                    "surface-container": "#efeee6",
+                    "surface-container-low": "#f5f4ed",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary": "#6f5c45",
+                    "outline-variant": "#b1b3a9",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "on-surface-variant": "#5e6058",
+                    "outline": "#797c73",
+                    "tertiary": "#6c5c4d",
+                    "on-primary-fixed": "#403f3f",
+                    "on-tertiary-fixed": "#504234",
+                    "on-surface": "#31332c",
+                    "on-error": "#fff7f6",
+                    "on-tertiary": "#fff7f3",
+                    "secondary-dim": "#62503a",
+                    "surface-container-high": "#e8e9e0",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "on-primary": "#faf7f6",
+                    "inverse-on-surface": "#9e9d99",
+                    "error-dim": "#4e0309",
+                    "tertiary-fixed": "#fde7d3",
+                    "secondary-fixed": "#f8dec1",
+                    "on-secondary": "#fff7f3",
+                    "secondary-fixed-dim": "#ead0b3",
+                    "primary": "#5f5e5e",
+                    "on-secondary-container": "#614f38",
+                    "error": "#9f403d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .product-card:hover .quick-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-neutral-200/20 dark:border-neutral-800/20">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-['Noto_Serif'] text-2xl tracking-[0.2em] uppercase text-neutral-800 dark:text-neutral-100" href="#"><div class="flex items-center gap-3"><img alt="Veniyara Icon" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara" class="h-5 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></div></a>
+</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">New Arrivals</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-900 dark:text-white border-b border-neutral-400 pb-1 hover:opacity-70 transition-opacity duration-300" href="#">Collections</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Atelier</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Sustainable</a>
+<a class="font-['Noto_Serif'] tracking-wider uppercase text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 hover:opacity-70 transition-opacity duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-neutral-700 dark:text-neutral-200 scale-95 transition-transform duration-200">shopping_bag</button>
+<button class="material-symbols-outlined text-neutral-700 dark:text-neutral-200 scale-95 transition-transform duration-200">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-12 max-w-[1920px] mx-auto">
+<!-- Editorial Header -->
+<header class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-outline mb-4 block">The Monsoon Edit</span>
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-tight tracking-tight">Ethereal Silhouettes</h1>
+<p class="mt-6 text-on-surface-variant font-body text-lg leading-relaxed max-w-lg">
+                        Discover our latest collection of Indo-Western fusion wear, where traditional Indian craftsmanship meets the fluidity of modern structural design.
+                    </p>
+</div>
+<div class="flex items-center gap-4 text-xs font-label uppercase tracking-widest text-outline-variant">
+<span>Showing 24 of 142 Pieces</span>
+<div class="h-px w-24 bg-outline-variant/30"></div>
+</div>
+</div>
+</header>
+<!-- Filters & Sorting -->
+<section class="mb-12 border-y border-outline-variant/10 py-6 flex flex-wrap items-center justify-between gap-6">
+<div class="flex flex-wrap items-center gap-8">
+<div class="group relative cursor-pointer">
+<button class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface">
+                        Category <span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+</div>
+<div class="group relative cursor-pointer">
+<button class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface">
+                        Price <span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+</div>
+<div class="group relative cursor-pointer">
+<button class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface">
+                        Size <span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+</div>
+<div class="group relative cursor-pointer">
+<button class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface">
+                        Material <span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label text-xs uppercase tracking-widest text-outline">Sort By:</span>
+<select class="bg-transparent border-none focus:ring-0 font-label text-xs uppercase tracking-widest text-on-surface cursor-pointer p-0">
+<option>Newest First</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant woman wearing a draped silk champagne-colored fusion gown with intricate hand-embroidered floral motifs in a minimalist white studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBy8xvqKuySxPJXJn23znPJp0WfmKNnvS8K37_uNZRtT6d96eP-n_dm_2fWAhuuai02pPOiuyQyoAktFQnjJj3TYZnH1I1RqGsTNVI8Lym-kZvjNGKIk87oRaHZZpbE76AfaHR-TaWA8IKG6ymwTHShXHrbjgLEXeUTXnobwqTBheboY18Kt7Uwyw0y_6yBHFVdr8S8rc6RYgN2PyOFqPA8KvI5Qgu2_Rg6K7hQm972XwAoeIw3U2dgXmp_q4GdiOAO1tL0uBgD_Ua"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Marigold Silk Wrap</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Raw Silk, Organza</p>
+</div>
+<span class="font-label text-sm text-secondary">₹18,500</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card group cursor-pointer lg:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model in structured ivory corset top with layered ethnic skirt in a sunlit architectural space with long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh5hQ_wudEoD8QgUiFkVuFm49B8cxvaMNT6nYcY4-V1ddIS0FCJAU7E9uORn7zr81-p5QlVxT1DusRvDnSUnjPcyyc_qX7XMjCxJ9OXtwR6H6t_GqULqn8ArShOQHM38Q6tyscDDAqfdiAwVjJUCnJRNaspgvPGuKZQXme5ldgbRD1htMJ8Kv9eAA67C4oBhIBa_wgtU9l_zMVF-lekYOq6CnCwSXJB8DEOYpxT4Vx3vEReEAxfJay_Y_UDtWYAh7IeTu5AfiCnuYe"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Archway Corset Set</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Cotton-Linen Blend</p>
+</div>
+<span class="font-label text-sm text-secondary">₹12,200</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary emerald green kaftan dress with gold thread embroidery details on the neckline against a soft beige textured wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMa32v90P_VMtLe9ORO40rpuCFDD6hdDe_C7JM3WvdVAHI0L7gn_asLPIG4oG3q1a6MvN6_jqJ782Dbt2V0_-dNK6JdcPQyL5AeWsSFgil_l9c4AVovHvtokKk3SGmjQt0n67_07QJMwHxosncPSLXkxZWcNKBMPjzEZCjPkcEORILPl1yGhX6Cd9azzieAnOUvunUHnh0OhQN--Z8lmcjY21jSxvk-VmC07C9q3iW1axakCcdCcab6z-jf5_tQXKWRittourkUR2"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Emerald Kaftan</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Crinkle Chiffon</p>
+</div>
+<span class="font-label text-sm text-secondary">₹9,800</span>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card group cursor-pointer lg:mt-8">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-fashion close up of hand-loomed textile dress with asymmetric hem and modern tailoring in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY0W5W3w3Kb3r8qyQI-pIFbko7PAcUdGAytJS0c2Nnk5JLjHuzKDS6wtvHS4u4stSTfDirvgglYAF32LtWko8IEd6HfnF0KAX4lz6fUleLq-hwni5r3aha0BVHwW0qxoME3Xt7f1A4_OvZX_vbgjh-dcX5MqMnDcke5jL0zIQL3HpsaDzWjq9_l1XF1oUocVc6xSTvGBHuMHzWpvt3ld4AH5l_UAKPLB-KvZiTQWUcusHL9G_S5Kgm-LGfuPgdwj31VO46vffKspFH"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Atelier Jumpsuit</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Hand-loomed Cotton</p>
+</div>
+<span class="font-label text-sm text-secondary">₹21,000</span>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist setup of white folded linen garments with soft organic shadows for an airy retail lifestyle aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWg5F8EhAWFzEqaneMNmPy0juWJu9-tkY4FAD5WIre0k3Fa9-gZ1a-gbH4RjcJwk1fmH7eo9fD7ajL2hhiYycqzwZW3Q0gRyz6wpQlfIj2D1rTYXD5T6aCPkXjXaybNimdOXPylZRw5Y1GLrqLjC80oaD6_5dt0WXWIO2CIRCIq1UdPSbn8QRmhLvX2vvzoTzygEHAPcS0toZqSDGVvZxUa7cSYek8izgpSj5Img3yyNewLRKi19I3f7CL-FHRDyOdMZb9nMJQIydR"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Linen Trench</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Pure Linen</p>
+</div>
+<span class="font-label text-sm text-secondary">₹15,400</span>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Draped saree-style modern dress in blush pink with metallic silver border against a neutral architectural arch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaRaAOuQZcj6F4CCOueSxhQiuKwnDa3eC4zbJQLu2_T46cXXiYkCQu9ZPzR8oHJYHJ68aJuPhy9aJOfmIZ6OAzJXaMAMAN7Msb5i1E6g3UVscTRTyTYoYRWl-u6Sbf9jhtQ_aYcxWUVuQOXtR92yMkRe9ff5v7C3xUcDecmGXNMCPJas73-m2uqi2nEP3QNBVz8zdyJRIGvYtpTa1FYBS5BiW1aGQddkDipzVlAGr81sAgGCdDU1sspjAra59ah6sTPXmkyJ9OxMlg"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Blush Draped Gown</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Satin Silk</p>
+</div>
+<span class="font-label text-sm text-secondary">₹24,500</span>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="product-card group cursor-pointer lg:mt-16">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisanal hand-printed pattern on soft cotton tunic, editorial shot with focus on texture and print detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXvY8FVM3cdTLzr44V6Nnjfti4q7cfQOqM_vIuS8JI3hFAzjJWGvBmW8VjmAFS3D5Gz6ZP9P0e8uCA3TbiKTA8EUMxGVgYpjgos1hV2j-GocwaE6k70wWL9Ngj8wt9wQ4yDZYCvWsriNuK08eAiFrprvlMMpU-TQ2LeA_WtQdWX689J6Z5x-Q66xnt06-bdVIW-emJaCIBomXYc_s-Z6lMkVkJprVhI7kosHQySnTGi3NVyVjnBIjwuWEjlVRmOrWFbKkXMNTzZoE3"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Indigo Print Tunic</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Block-printed Cotton</p>
+</div>
+<span class="font-label text-sm text-secondary">₹7,200</span>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low mb-6 rounded-DEFAULT">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant contemporary high-collared jacket with delicate gold zari embroidery on a charcoal grey silk fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBgQlJ50M0AqUoUTfsblqOA0u47uLmLnSgQNFzVDQw_ZAsXXBtjE6REDUvnCEfK7FGqweOzGD8aLRAJfjgKivkMCbZx8sOxuAS-Is9BuC_mU3b6dq-3-oMD8hrqck93M-ivBLr8shWJ7SjS2bRP7kzNuWfkWmmxpqwJcWmwRn_Jc_EZK5_VReQFC7hH9qlfYGklLrAlTlLE7m1dkZ4zJIvHjuDvfg4DFy_6nv-TA6wN1nJj0Lz0ImDDK-x2IzTtd4JLZCtArUD0xqp"/>
+<div class="quick-view absolute bottom-0 left-0 w-full p-4 bg-surface-container-lowest/90 backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full py-3 font-label text-xs uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Quick Add +</button>
+</div>
+<button class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-lg text-on-surface">Midnight Zari Jacket</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1">Tussar Silk</p>
+</div>
+<span class="font-label text-sm text-secondary">₹19,000</span>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="mt-32 flex flex-col items-center">
+<button class="bg-primary text-on-primary px-12 py-4 rounded-DEFAULT font-label text-xs uppercase tracking-[0.2em] hover:bg-primary-dim transition-all duration-300">
+                Reveal More Pieces
+            </button>
+<div class="mt-8 h-1 w-48 bg-outline-variant/20 relative">
+<div class="absolute top-0 left-0 h-full w-1/3 bg-secondary"></div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-neutral-950 w-full py-16 px-12 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="font-['Noto_Serif'] text-lg tracking-widest uppercase text-neutral-800 dark:text-neutral-200"><div class="flex items-center gap-2"><img alt="Veniyara Icon" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uhk5GgTveiR1KJY5PVE2Wov0a5K0MQ4sXgiRfdR-DwzhRIHnrZBLzJiKVFd3rJSkTMiiUpovw6k9aJFHIZvlZmOTZ-u8-Pfqrq4QSHzurrZorzmTDt50wN0Z7ViI4wf8jlqPi83hyyGNk6MoKPNhJSRtvBeQgvtp4TO9EEkHqd0MkLK9buHvjBSLwORyVKKieP3DbbkxDB_-1jGqLYsxTGkR-ZCyOMBz9Nsu3RcZ1-2ZFner01WyLrPk4AJ4ASeDxG3UsVmMXhUYFM"/><img alt="Veniyara" class="h-4 w-auto dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhyynBVQrN_MP915pN49aIEYCWsBoe66Qw-Gd1r-hFT_Z_qeuL7tMllEhl9W_E1aFXJEoYu1S7s0w2QYerel5bjsoEP3NEQzBL_SpbJK71l3Y3xGFWPZRLPn5ZQ2fBUQDO_5DE10iU6YQW5ct8h17-r1y-aGO-vVw20M3juSIBfM7-NFRv6PGeca2L6nsWyaC9BZ5Ao0YkLzG63cLH99yKMjf_qgGLrvN168soK5KZBDohYgOMbHC0Fh4GAu3kh1rp9ZnCmwDVr1Oc"/></div></span>
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400 leading-loose">
+                    A tribute to the timeless grace of Indian textiles reimagined for the global woman. Crafting legacies, one silhouette at a time.
+                </p>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-on-surface mb-6">Collections</h4>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">The Monsoon Edit</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Atelier Essentials</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Bridal Fusion</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Archive</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-on-surface mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Sustainability</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Contact Us</a></li>
+<li><a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 hover:translate-x-1 transition-transform duration-300 block" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-on-surface mb-6">The Journal</h4>
+<p class="font-['Manrope'] text-xs tracking-tight text-neutral-500 mb-4">Subscribe to receive atelier updates and early access.</p>
+<div class="flex border-b border-outline-variant/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-xs w-full p-0 font-label tracking-widest" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined text-sm">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Manrope'] text-xs tracking-tight text-neutral-600 dark:text-neutral-400">© 2024 Veniyara Atelier. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800 underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800" href="#">Instagram</a>
+<a class="font-['Manrope'] text-xs tracking-tight text-neutral-500 hover:text-neutral-800" href="#">Pinterest</a>
+</div>
+</div>
+</footer>
+</body></html>
