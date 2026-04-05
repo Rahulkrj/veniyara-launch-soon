@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veniyara — Lookbook</title>
+    <meta
+      name="description"
+      content="Veniyara lookbook — preview imagery from our upcoming collection."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .gallery-shell {
+        position: relative;
+        z-index: 1;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 2rem) 3rem;
+      }
+
+      .gallery-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .gallery-top h1 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+
+      .gallery-back {
+        display: inline-flex;
+        align-items: center;
+        font-family: var(--font-body);
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--color-text-muted);
+        border: 1px solid var(--color-border);
+        padding: 0.6rem 1.1rem;
+        border-radius: var(--radius);
+        transition: border-color var(--transition), color var(--transition);
+      }
+
+      .gallery-back:hover {
+        border-color: var(--color-gold);
+        color: var(--color-text);
+      }
+
+      .gallery-back:focus-visible {
+        outline: 2px solid var(--color-gold-dark);
+        outline-offset: 3px;
+      }
+
+      .gallery-lead {
+        margin: 0 0 2rem;
+        max-width: 36rem;
+        font-size: 0.9375rem;
+        color: var(--color-text-muted);
+        line-height: 1.65;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+        gap: clamp(1rem, 2.5vw, 1.5rem);
+      }
+
+      .gallery-card {
+        display: block;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        background: var(--color-cream);
+        box-shadow: var(--shadow-soft);
+        transition: box-shadow var(--transition), transform var(--transition);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .gallery-card:hover {
+        box-shadow: var(--shadow-hover);
+        transform: translateY(-2px);
+      }
+
+      .gallery-card:focus-visible {
+        outline: 2px solid var(--color-gold-dark);
+        outline-offset: 3px;
+      }
+
+      .gallery-card figure {
+        margin: 0;
+      }
+
+      .gallery-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      .gallery-card figcaption {
+        padding: 0.65rem 1rem;
+        font-family: var(--font-body);
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+        border-top: 1px solid var(--color-border);
+        background: rgba(250, 248, 245, 0.92);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__bg" aria-hidden="true"></div>
+
+      <div class="gallery-shell">
+        <header class="gallery-top">
+          <h1>Lookbook</h1>
+          <a class="gallery-back" href="../">← Back to home</a>
+        </header>
+
+        <p class="gallery-lead">
+          Tap an image to open the full-size file in a new tab — easy to save or share.
+        </p>
+
+        <div class="gallery-grid">
+          <a
+            class="gallery-card"
+            href="adinavoicu-woman-1505407.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure>
+              <img
+                src="adinavoicu-woman-1505407.jpg"
+                width="800"
+                height="1067"
+                loading="lazy"
+                alt="Woman in elegant Indo-western styling, editorial portrait."
+              />
+              <figcaption>Portrait</figcaption>
+            </figure>
+          </a>
+          <a
+            class="gallery-card"
+            href="muneebmalhotra-bag-8777180.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure>
+              <img
+                src="muneebmalhotra-bag-8777180.jpg"
+                width="800"
+                height="1067"
+                loading="lazy"
+                alt="Fashion accessory — structured bag with refined details."
+              />
+              <figcaption>Accessory</figcaption>
+            </figure>
+          </a>
+          <a
+            class="gallery-card"
+            href="summerstock-young-woman-1745173.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure>
+              <img
+                src="summerstock-young-woman-1745173.jpg"
+                width="800"
+                height="1067"
+                loading="lazy"
+                alt="Young woman in contemporary fashion, lifestyle shot."
+              />
+              <figcaption>Lifestyle</figcaption>
+            </figure>
+          </a>
+          <a
+            class="gallery-card"
+            href="tieubaotruong-woman-7213852.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure>
+              <img
+                src="tieubaotruong-woman-7213852.jpg"
+                width="800"
+                height="1067"
+                loading="lazy"
+                alt="Woman in refined outfit, full-length editorial."
+              />
+              <figcaption>Editorial</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2026 Veniyara by Pragya Designer Studio</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -410,7 +410,7 @@ body {
   outline-offset: 3px;
 }
 
-/* Lookbook — disabled */
+/* Lookbook */
 .lookbook-btn {
   display: inline-flex;
   align-items: center;
@@ -425,12 +425,25 @@ body {
   background: transparent;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  cursor: not-allowed;
-  opacity: 0.75;
+  cursor: pointer;
+  opacity: 1;
+  transition: border-color var(--transition), color var(--transition),
+    box-shadow var(--transition);
 }
 
-.lookbook-btn:disabled {
-  opacity: 0.72;
+a.lookbook-btn {
+  text-decoration: none;
+}
+
+.lookbook-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-text);
+  box-shadow: var(--shadow-soft);
+}
+
+.lookbook-btn:focus-visible {
+  outline: 2px solid var(--color-gold-dark);
+  outline-offset: 3px;
 }
 
 /* Brand story */
